@@ -254,6 +254,14 @@ main {
 }
 
 /* ejemplos de transiciones <<<<<<<<<<<<<<<<<*/
+main section article ul li {
+    font-size: 2em;
+    text-align: center;
+}
+main section article .tituloDePagina {
+    text-align: center;
+    font-size: 2em;
+}
 
 .parrafoPresentacion {
     padding: 10px;
