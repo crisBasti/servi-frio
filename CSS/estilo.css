@@ -338,9 +338,9 @@ img {
     color: white;
     background: blue;
 } */
-.btnContratar2:hover {
+.btnContratar2 a:hover {
     border-radius: 20px;
-    background: blue;
+    background: radial-gradient(rgb(255, 0, 0), rgb(255, 255, 255))
 }
 .btnContratar2:hover a {
     color: white;
