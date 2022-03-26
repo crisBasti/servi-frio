@@ -183,6 +183,7 @@ main {
     margin-top: -50px;
     padding: 15px 30px;
     overflow: hidden;
+    cursor: pointer;
 }
 .transicion .span1 {
     position: absolute;
@@ -277,7 +278,7 @@ main section article .tituloDePagina {
 /* ------------------aqui El MAIN ----------------------*/
 .card {
     background: transparent;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .cajaBtn {
     margin: 0 45%;
