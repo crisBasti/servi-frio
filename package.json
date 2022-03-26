@@ -1,0 +1,22 @@
+{
+  "name": "pagina-para-servifrio",
+  "version": "1.0.0",
+  "description": "pagina para Jose Bordon",
+  "main": "server-servifrio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisBasti/servi-frio.git"
+  },
+  "author": "Cristian Portillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisBasti/servi-frio/issues"
+  },
+  "homepage": "https://github.com/crisBasti/servi-frio#readme"
+}

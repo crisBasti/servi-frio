@@ -10,7 +10,8 @@
     <title>Servi-Frio</title>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="container">
+
         <header>
             <nav>
                 <a href="./index.html">
@@ -28,28 +29,25 @@
                 
                 <ul class="lista-nav">
                     <li><a class="menu-nav" href="./index.html">Home</a></li>
-                    <li><a class="menu-nav" href="./vistas/airesacondicionados.html">Aires Acondicionados</a></li>
+                    <li><a class="menu-nav" href="./vistas/airesacondicionados.html">Aires</a></li>
                     <!-- <li><a class="menu-nav" href="./vistas/calderas.html">Calderas</a></li> -->
-                    <li><a class="menu-nav" href="./vistas/camarasdefrio.html">Camaras de Frio</a></li>
+                    <li><a class="menu-nav" href="./vistas/camarasdefrio.html">Camaras</a></li>
                     <!-- <li><a class="menu-nav" href="./vistas/ventas.html">Venta de Equipos</a></li> -->
                     <li><a class="menu-nav" href="./vistas/contacto.html">Contactanos</a></li>
                 </ul>
             </nav>
         </header>
-        <aside class="aside-1">
+
+        <!-- <aside class="aside-1">
             
-        </aside>
+        </aside> -->
         
         <main>
             <div class="titulo-Principal">
                 <h1>Climatizamos tus Ambientes<br>
                     Climatizamos tu Vida</h1>
             </div>
-            <!-- <button class="btnContratar">
-                <a href="./vistas/contacto.html">
-                    CONTRATAR
-                </a>
-            </button> -->
+            
             <div class="animacion">
                 <picture class="cont-img">
                     <img class="img-Aire" src="./img/split.jpg" alt="Split Aire Acondicionado">
@@ -69,66 +67,96 @@
                     Estamos para climatizar tus emociones.<br>
                     Casi 20 Años de experiencia y muchos clientes fieles y conformes nos avalan</p>
             </article>
-            <section class="contenedorTargetas">
-                <p></p>
-                <article class="targeta01">
-                    <center>
-                        <img src="./img/portada1.jpg.jpeg" alt="Aires Acondicionados">
-                    <br>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, praesentium alias, rerum repudiandae harum dolores porro suscipit numquam similique facilis ullam explicabo iure voluptatem eveniet soluta consectetur distinctio quas delectus.
-                    </p>
-                    </center>
-                </article>
-    
-                <article class="targeta02">
-                    <center>
-                        <img src="./img/portada2.jpg.jpeg" alt="Calderas Hogareñas">
-                    <br>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, praesentium alias, rerum repudiandae harum dolores porro suscipit numquam similique facilis ullam explicabo iure voluptatem eveniet soluta consectetur distinctio quas delectus.
-                    </p>
-                    </center>
-                </article>
-    
-                <article class="targeta03">
-                    <center>
-                        <img src="./img/portada3.jpg.jpeg" alt="Camaras de Frio">
-                    <br>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, praesentium alias, rerum repudiandae harum dolores porro suscipit numquam similique facilis ullam explicabo iure voluptatem eveniet soluta consectetur distinctio quas delectus.
-                    </p>
-                    </center>
-                </article>
+            <!-- carrousel con Bootstrap >>>>>>>>> -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/Aires Grandes.jpeg" class="d-block w-100" alt="Aires Acondicionados">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/aireAcondicionado.png" class="d-block w-100" alt="Splits Grandes">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/portada3.jpg.jpeg" class="d-block w-100" alt="Splits Aires Acondicionados">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- carrousel con Bootstrap <<<<<<<<<-->
 
+            <!-- Targetas CARDS con Bootstrap >>>>>>>> -->
+            
+            <section class="container">
+                <div class="row">
+                    <div class="card col-md-4">
+                        <img class="h-100 d-inline-block"
+                            src="./img/portada1.jpg.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-body">Card title</h5>
+                            <p class="card-text text-body">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img class="h-100 d-inline-block" src="./img/portada2.jpg.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-body">Card title</h5>
+                            <p class="card-text text-body">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4">
+                        <img class="h-100 d-inline-block"
+                            src="./img/portada3.jpg.jpeg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-body">
+                            <h5 class="card-title text-body">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <center>
+            <!-- targetas CARDS con Bootstrap <<<<<<<< -->
+            <div class="cajaBtn">
                 <button class="btnContratar2">
                     <a href="./vistas/contacto.html">
                         CONTRATAR
                     </a>
                 </button>
-            </center>
+            </div>
+            
+         </main>
 
-            
-            
-        </main>
-        <aside class="aside-2">
-            
-        </aside>
-
-        <footer>
+         <footer>
             <article class="enlacesDelFooter">
-                <center>
-                    <div class="footerNav">
+                
+                    <div class="footerNav" id="mediosDePago">
                         <h2>Medios De Pago</h2>
                         <picture class="mediosdePago">
                             <img class="img0" src="https://santosplaceres.com.ar/wp-content/uploads/2021/03/Medios-de-Pago-1024x576.png" alt="Medios de Pago">
                         </picture>
                     </div>
-                </center>
-                <center>
-                    <div class="footerNav">
+                
+               
+                    <div class="footerNav" id="redesSociales">
                         <h2>Redes Sociales</h2>
                         <picture>
                             <a href="https://www.instagram.com/cris_sypsy/" target="_blank">
@@ -146,12 +174,12 @@
                             </a>
                         </picture>
                     </div>
-                </center>
+                
             </article>
-        </footer>
+         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="miprimerserver.js"></script>
+    <script src="./server-servifrio.js"></script>
 </body>
 
 </html>
