@@ -1,0 +1,33 @@
+footer {
+    
+    padding: 1em 0 1em 0;
+    background: rgb(115, 178, 230);
+    grid-area: footer;
+}
+.enlacesDelFooter {
+    display: flex;
+    justify-content:space-around;
+}
+.footerNav {
+    width: 250px;
+    height: 100px;
+    margin-right: 10px;
+    
+}
+.footerNav h2 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+/* .mediosdePago {
+    margin: auto;
+} */
+.footerNav .img0 {
+    width: 200px;
+    height: 50px;
+    
+}
+.footerNav .img1 {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
