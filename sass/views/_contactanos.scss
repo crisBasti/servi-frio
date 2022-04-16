@@ -1,0 +1,55 @@
+.tituloContactanos {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* formulario para la pagina de contactos >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.formularioDeContacto {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(149, 196, 219, 0.5);
+}
+.formParaContacto {
+    padding: 10px;
+    background: rgba(216, 226, 231, 0.5);
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+}
+.formParaContacto input {
+    padding-left: 15px;
+    width: 17em;
+    height: 2rem;
+    border: none;
+    outline: none;
+}
+.formParaContacto input:hover {
+    color: white;
+    background: rgb(0, 162, 255);
+}
+.comentario {
+    outline: none;
+    border: none;
+    padding: 10px;
+    max-width: 17em;
+    min-height: 5em;
+    max-height: 250px;
+}
+.formParaContacto .comentario:hover {
+    color: white;
+    background: rgb(0, 162, 255);
+}
+.btnEnviarForm {
+    width: 100px;
+    height: 30px;
+    margin: 0 80px;
+    background: rgb(0, 162, 255);
+}
+.btnEnviarForm:hover {
+    color: white;
+    background: rgb(66, 66, 173);
+}
+/* formulario para la pagina de contactos<<<<<<<<<<<<<<<<<<<<<<<<<<< */

@@ -3,14 +3,14 @@
 
 
 /* Variables */
-/* :root {
+:root {
     --principal: red;
     --secondary: white;
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Bowly One SC", cursive;
     --text-lg: 2em;
     --text-md: 1.8em;
-} */
+}
 
 /* Reset */
 * {
@@ -33,15 +33,18 @@
 } */
 
 /* Global */
-.contenedor {
+
+/* .contenedor {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas:'header header header'
                         'main   main   main'
                         'footer footer footer';
-}
-header {
+} */
+
+/* HEADER >>>>>*/
+/* header {
     width: 100%;
     grid-area: header;
 }
@@ -65,21 +68,23 @@ nav a {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}
+} */
+
 /* Titulo del header Servi-Frio */
-.titulo {
+
+/* .titulo {
     width: 300px;
     height: 52px;
 }
 .titulo .servi- {
     font-size: 50px;
-    color: red;
+    color: blue;
     letter-spacing: 5px;
     font-weight:bold;
 }
 .titulo .frio {
     font-size: 48px;
-    color: blue;
+    color: red;
     letter-spacing: 5px;
     font-weight:bold;
 }
@@ -97,13 +102,11 @@ nav a {
     padding: 5px;
     color: white;
     background: rgb(77, 118, 230);
-}
-/* Hasta aqui el header */
-.aside-1 {
-    grid-area: aside-1;
-}
+} */
+
+/* Hasta aqui el HEADER <<<<<*/
+
 main {
-    /* height:min-content; */
     background-image: url('../img/familia-Disfrutando.webp');
     background-size: cover;
     grid-area: main;
@@ -126,17 +129,14 @@ main {
 /* formulario para la pagina de contactos >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .tituloAiresAcon {
     font-size: 50px;
-    /* margin: 100px 0 0 0; */
     text-align: center;
 }
 .tituloCamarasFrio {
     font-size: 50px;
-    /* margin: 100px 0 0 0; */
     text-align: center;
 }
 .tituloContactanos {
     font-size: 50px;
-    /* margin: 100px 0 0 0; */
     text-align: center;
 }
 .formularioDeContacto {
@@ -298,9 +298,7 @@ main section article .tituloDePagina {
 .parrafoPresentacion p {
     font-size: 50px;
 }
-/* .parrafoPresentacion .listaServicios {
-    margin: auto;
-} */
+
 .parrafoPresentacion .listaServicios ul {
     text-align: center;
     list-style: none;
@@ -336,9 +334,8 @@ main section article .tituloDePagina {
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
-.aside-2 {
-    grid-area: aside-2;
-}
+
+/* FOOTER >>>>>>*/
 /* footer {
     
     padding: 1em 0 1em 0;
@@ -369,7 +366,7 @@ main section article .tituloDePagina {
     height: 50px;
     border-radius: 50%;
 } */
-
+/* HASTA AQUI EL FOOTER <<<<<< */
 
 
 /* MEDIAS QUERY */
@@ -383,16 +380,16 @@ main section article .tituloDePagina {
                             'main'
                             'footer';
     }
-    nav {
+    /* nav {
         display: inline-block;
-    }
+    } */
     .parrafoPresentacion p {
         font-size: 1.5em;
     }
     .cajaBtn {
         margin: 0 35%;
     }
-    .footerNav {
+    /* .footerNav {
         width: 170px;
         height: 100px;
         margin-right: 10px;
@@ -407,15 +404,15 @@ main section article .tituloDePagina {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-    }
+    } */
     
 }
 
 @media screen and (max-width: 767px){
-    nav {
+    /* nav {
         width: 100%;
         display: inline-block;
-    }
+    } */
     .parrafoPresentacion p {
         font-size: 1.5em;
     }
@@ -423,7 +420,7 @@ main section article .tituloDePagina {
     .cajaBtn {
         margin: 0 35%;
     }
-    .footerNav .img0 {
+    /* .footerNav .img0 {
         width: 160px;
         height: 44px;
         margin-left: 5px;
@@ -432,5 +429,5 @@ main section article .tituloDePagina {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-    }
+    } */
 }
