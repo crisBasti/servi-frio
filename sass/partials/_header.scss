@@ -31,14 +31,16 @@ header {
 
             .servi- {
                 font-size: 50px;
-                color: blue;
+                // aplicando map-get
+                color: map-get($paletaColores , servi-);
                 letter-spacing: 5px;
                 font-weight:bold;
             }
 
             .frio {
                 font-size: 48px;
-                color: red;
+                // aplicando map-get
+                color: map-get($paletaColores , frio);
                 letter-spacing: 5px;
                 font-weight:bold;
             }
@@ -58,6 +60,13 @@ header {
                     padding: 5px;
                     color: white;
                     background: rgb(77, 118, 230);
+                }
+
+                &--active {
+                    // aplicando el @extend
+                    @extend .menu-nav;
+                    border-left: 1px solid rgb(255, 0, 0);
+                    border-bottom: 1px solid rgb(255, 0, 0);
                 }
             }
         }

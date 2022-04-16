@@ -18,18 +18,29 @@
     width: 300px;
     height: fit-content;
     margin: auto;
+
+    input {
+        padding-left: 15px;
+        width: 17em;
+        height: 2rem;
+        border: none;
+        outline: none;
+    }
+
+    input:hover {
+        color: white;
+        // aplicando map-get
+        background: map-get($paletaColores , secondary);
+    }
+
+    .comentario:hover {
+        color: white;
+        // aplicando map-get
+        background: map-get($paletaColores , secondary);
+    }
 }
-.formParaContacto input {
-    padding-left: 15px;
-    width: 17em;
-    height: 2rem;
-    border: none;
-    outline: none;
-}
-.formParaContacto input:hover {
-    color: white;
-    background: rgb(0, 162, 255);
-}
+
+
 .comentario {
     outline: none;
     border: none;
@@ -38,10 +49,7 @@
     min-height: 5em;
     max-height: 250px;
 }
-.formParaContacto .comentario:hover {
-    color: white;
-    background: rgb(0, 162, 255);
-}
+
 .btnEnviarForm {
     width: 100px;
     height: 30px;

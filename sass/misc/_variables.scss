@@ -1,8 +1,14 @@
 :root {
-    $principal: red;
-    $secondary: blue;
     $font-primary: "Inter", sans-serif;
     $font-secondary: "Bowly One SC", cursive;
     $text-lg: 2em;
     $text-md: 1.8em;
+    $principal: linear-gradient(red, rgb(115, 178, 230));
 }
+// MAPA PALETA DE COLORES
+$paletaColores: (
+    principal: linear-gradient(red, rgb(115, 178, 230)),
+    secondary: rgb(0, 162, 255),
+    servi-:blue,
+    frio:red,
+);

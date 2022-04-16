@@ -1,12 +1,10 @@
 /* Helpers */
-/* .flex-row {
-    display: flex;
+
+// aplicando un mixin
+@mixin dimenciones($width: 0, $height: 0, $background: black, $font-size: 1em, $color: black) {
+    width: $width;
+    height: $height;
+    background: $background;
+    font-size: $font-size;
+    color: $color;
 }
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-} */
