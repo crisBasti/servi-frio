@@ -163,6 +163,9 @@ body {
       border-radius: 0 0 0 40px;
       width: 250px;
       height: 200px; }
+  body .formParaContacto .titulo__form {
+    font-size: 2em;
+    text-align: center; }
   body main {
     background-size: cover;
     grid-area: main;

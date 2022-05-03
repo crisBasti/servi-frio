@@ -12,12 +12,18 @@ body {
             height: 200px;
         }
     }
+    .formParaContacto {
+
+        .titulo__form{
+            font-size: 2em;
+            text-align: center;
+        }
+    }
 
     main {
         background-size: cover;
         grid-area: main;
         margin-bottom: 1em;
-
 
         .parrafoPresentacion {
             padding: 10px;
