@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1f892a9a5e.js" crossorigin="anonymous"></script>
     <!-- estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/main.css">
@@ -11,40 +13,56 @@
     <meta name="description" content="Servi-Frio es una empresa dedicada a instalar Equipos de Refrigeracion y Calefaccion en Hogares , Negocios , Oficinas , empresas y todo tipo de lugares que lo requieran. Asi tmb al mantenimiento de los mismos equipos">
     <!-- aplicando Keywords -->
     <meta name="keywords" content="Aires Acondicionados Services Refigeracion Calderas Camaras de Frios Split Mantenimiento Instalacion Desinstalacion Empresa Calefaccion Ventilacion Frio Calor">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Home - Servi-Frio Service Instalacion y Mantenimiento</title>
 </head>
 <body>
     <div class="container">
+        
         <header>
-            <nav>
-                <a href="./index.html">
-                    <picture class="caja-logos">
-                        <img class="logoPrincipal" src="./img/logo.jpg" alt="Copo de Nieve">
-                        <p>Group</p>
-                    </picture>
-                </a>
-                <p class="titulo">
-                    <a href="./index.html">
-                        <span class="servi- color__rojo">Servi-</span>
-                        <span class="frio color__azul">Frio</span>
+            <!-- menu responsive >>>>>>>>>>>>>>>>>>>>>-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="logoPrincipal" src="./img/Targeta-Servifrio.jpeg" alt="Servi-Frio Group">
                     </a>
-                </p>
-                
-                <ul class="lista-nav">
-                    <!-- aplicando el @extend -->
-                    <li><a class="menu-nav--active" href="./index.html">Home</a></li>
-                    <li><a class="menu-nav" href="./vistas/airesacondicionados.html">Aires</a></li>
-                    <li><a class="menu-nav" href="./vistas/camarasdefrio.html">Camaras</a></li>
-                    <li><a class="menu-nav" href="./vistas/ventas.html">Equipos</a></li>
-                    <li><a class="menu-nav" href="./vistas/contacto.html">Contactanos</a></li>
-                </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <!-- aplicando el @extend -->
+                                <a class="menu-nav--active" aria-current="page" href="./index.html"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./vistas/industrial.html"><b>Industrial</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./vistas/comercial.html"><b>Comercial</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./vistas/residencial.html"><b>Residencial</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./vistas/contacto.html"><b>Contacto</b></a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </div>
             </nav>
         </header>
         <!-- MAIN >>>>>>>  -->
         <main>
             <div class="titulo-Principal">
-                <h1>Climatizamos tus Ambientes<br>
-                    Climatizamos tu Vida</h1>
+                <h1><b>Climatizamos tus Ambientes</b><br>
+                    <b>Climatizamos tu Vida</b></h1>
             </div>
             
             <div class="animacion">
@@ -75,13 +93,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./img/Aires Grandes.jpeg" class="d-block w-50" alt="Aires Acondicionados">
+                    <img src="./img/comercial/Aires Grandes.jpeg" class="d-block w-100" alt="Aires Acondicionados">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/aireAcondicionado.png" class="d-block w-50" alt="Splits Grandes">
+                    <img src="./img/comercial/CamarasCamioneta.jpeg" class="d-block w-100" alt="Splits Grandes">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/portada3.jpg.jpeg" class="d-block w-50" alt="Splits Aires Acondicionados">
+                    <img src="./img/comercial/service-manteni.jpeg" class="d-block w-100" alt="Servise y Mantenimiento">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -101,31 +119,31 @@
                 <div class="row">
                     <div class="card col-md-4">
                         <img class="h-100 d-inline-block"
-                            src="./img/portada1.jpg.jpeg"
+                            src="./img/industrial/ventilacion-conductos.jpeg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-body">Camaras de Frio</h5>
-                            <p class="card-text text-body">Instalamos Camaras de Frio Para emprendimientos y Frigorificos</p>
-                            <a href="./vistas/camarasdefrio.html" class="btn btn-primary">Ver</a>
+                            <h5 class="card-title text-body"><b>Industrial</b></h5>
+                            <p class="card-text text-body">Instalamos y hacemos mantenimientos de equipos industriales</p>
+                            <a href="./vistas/industrial.html" class="btn btn-primary">Ver</a>
                         </div>
                     </div>
                     <div class="card col-md-4">
-                        <img class="h-100 d-inline-block" src="./img/portada2.jpg.jpeg"
+                        <img class="h-100 d-inline-block" src="./img/comercial/armado-camara.jpeg"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-body">Refrigeracion</h5>
-                            <p class="card-text text-body">Todo tipo de Refigeracion Ya sea Hogareña o Negocios y oficinas</p>
-                            <a href="./vistas/airesacondicionados.html" class="btn btn-primary">Ver</a>
+                            <h5 class="card-title text-body"><b>Comercial</b></h5>
+                            <p class="card-text text-body">Todo tipo de Refigeracion ya sea Negocios y oficinas</p>
+                            <a href="./vistas/comercial.html" class="btn btn-primary">Ver</a>
                         </div>
                     </div>
                     <div class="card col-md-4">
                         <img class="h-100 d-inline-block"
-                            src="./img/portada3.jpg.jpeg"
+                            src="./img/residencial/trabajos-residenciales.jpeg"
                             class="card-img-top" alt="...">
                         <div class="card-body text-body">
-                            <h5 class="card-title text-body">Instalacion</h5>
-                            <p class="card-text">Colocacion y desinstalacion de Aires acondicionados , como tambien Calderas</p>
-                            <a href="./vistas/contacto.html" class="btn btn-primary">Ver</a>
+                            <h5 class="card-title text-body"><b>Residencial</b></h5>
+                            <p class="card-text">Colocacion de Aires acondicionados, como tambien Calderas</p>
+                            <a href="./vistas/residencial.html" class="btn btn-primary">Ver</a>
                         </div>
                     </div>
                 </div>
@@ -138,45 +156,40 @@
                     </a>
                 </button>
             </div>
-            
-         </main>
-         <!-- MAIN <<<<<< -->
+        </main>
+        <!-- MAIN <<<<<< -->
 
-         <footer>
+        <footer>
             <article class="enlacesDelFooter">
-                
-                    <div class="footerNav" id="mediosDePago">
-                        <h2>Medios De Pago</h2>
-                        <picture class="mediosdePago">
-                            <img class="img0" src="http://electricidadfamelec.com.ar/img/cms/pagos%20famelec.png" alt="Medios de Pago">
-                        </picture>
-                    </div>
-                
-               
-                    <div class="footerNav" id="redesSociales">
-                        <h2>Redes Sociales</h2>
-                        <picture>
-                            <a href="https://www.instagram.com/cris_sypsy/" target="_blank">
-                                <img class="img1 icon-insta" src="https://norfipc.com/img/logos/logotipo-oficial-instagram-2016.png" alt="Instagram">
-                            </a>
-                        </picture>
-                        <picture>
-                            <a href="https://www.facebook.com/profile.php?id=100076846046431" target="_blank">
-                                <img class="img1 icon-face" src="https://w7.pngwing.com/pngs/413/291/png-transparent-computer-icons-facebook-social-media-22-text-logo-web-button.png" alt="Facebook">
-                            </a>
-                        </picture>
-                        <picture>
-                            <a href="https://wa.me/5491164521118?text=Hola%20Necesito%20sus%20servicios" target="_blank">
-                                <img class="img1 icon-wsp" src="https://i.pinimg.com/564x/78/7f/f8/787ff8eeec4a22582893c6b147e110f8.jpg" alt="Whatsapp">
-                            </a>
-                        </picture>
-                    </div>
-                
+                    <nav class="footerNav">
+                        <ul class="caja__icons">
+                            <li class="btn__icon">
+                                <a class="icon__face" href="https://m.facebook.com/login/?locale=es_ES">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li class="btn__icon">
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li class="btn__icon">
+                                <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="btn__icon">
+                                <a href="https://wa.me/5491164521118?text=Hola%20Necesito%20sus%20servicios">
+                                    <i class="fa-brands fa-whatsapp-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
             </article>
-         </footer>
+            <p class="copy">&copy;Todos los Derechos reservados</p>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./server-servifrio.js"></script>
 </body>
 
 </html>

@@ -1,125 +1,188 @@
-main {
-    /* height:min-content; */
-    background-image: url('../img/familia-Disfrutando.webp');
-    background-size: cover;
-    grid-area: main;
-    margin-bottom: 1em;
+body {
+    background: rgb(191, 187, 187);
 
-    /* Titulo del Main h1 >>>>>>>>>>>>>*/
-    .titulo-Principal {
-        width: 70%;
-        height: fit-content;
+    .cont-img {
+        display: flex;
+        justify-content: flex-end;
         position: relative;
-
-        & h1{
-            margin: 40px 0 0 20px;
-            position: absolute;
+    
+        .img-Aire {
+            border-radius: 0 0 0 40px;
+            width: 250px;
+            height: 200px;
         }
+    }
+
+    main {
+        background-size: cover;
+        grid-area: main;
+        margin-bottom: 1em;
+
+
+        .parrafoPresentacion {
+            padding: 10px;
+            background: rgba(216, 226, 231, 0.5);
+            
+            p {
+                font-size: 2em;
+            }
+        
+            .listaServicios ul {
+                text-align: center;
+                list-style: none;
+            }
+        }
+
+        .carousel {
+            margin: 20px 20%;
+
+            .d-block {
+                // width: 80%;
+                height: 25em;
+                margin: auto;
+            }
+        }
+
+        /* Titulo del Main h1 >>>>>>>>>>>>>*/
+        .titulo-Principal {
+            width: 70%;
+            height: fit-content;
+            position: relative;
+
+            & h1{
+                margin: 40px 0 0 20px;
+                position: absolute;
+            }
     
-    }
+        }
 
-    & section article ul li {
-        font-size: 2em;
-        text-align: center;
-    }
-    & section article .tituloDePagina {
-        text-align: center;
-        font-size: 2em;
-    }
-}
+        & section article ul li {
+            font-size: 2em;
+            text-align: center;
+        }
+        & section article .tituloDePagina {
+            text-align: center;
+            font-size: 2em;
+        }
 
-.cont-img {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-}
-.img-Aire {
-    border-radius: 0 0 0 40px;
-    width: 250px;
-    height: 200px;
-}
+        .card {
+            background: transparent;
+            margin: 10px 0px;
+            h5 {
+                text-align: center;
+            }
 
-.parrafoPresentacion {
-    padding: 10px;
-    background: rgba(216, 226, 231, 0.5);
+            p {
+                text-align: center;
+            }
+
+            .btn-primary {
+                width: 150px;
+                background: rgb(17, 15, 121);
+                margin: 0 30%;
+            }
+        }
+
+        .cajaBtn {
+            margin: 0 40%;
+            // width: 150px;
+            // height: 50px;
+            
+
+            .btnContratar2 {
+                // utilizando mixin
+                @include dimenciones(fit-content, fit-content, rgb(115, 178, 230), 2em, white);
+                // border: none;
+                // margin: 0px 0 20px 0;
+
+                background: black;
+                border: 5px solid;
+                border-image: linear-gradient(#2f36ff,#dd2476,#1c64ff) 1;
+                animation: rotate 1s ease-in infinite;
+            
+                a {
+                    color: rgb(109, 21, 83);
+                    text-decoration: none;
+                    font-family: 'Patua One', cursive;
+                }
+            
+                a:hover {
+                    border-radius: 20px;
+                    // background: radial-gradient(rgb(255, 0, 0), rgb(255, 255, 255))
+                }
+            
+                &:hover a {
+                    color: white;
+                }
+            }
+        }
+
+    }
     
-    p {
-        font-size: 2em;
+}
+
+@keyframes rotate {
+    50%{
+        border-image: linear-gradient(#1c64ff,#dd2476,#2f36ff) 1;
+    }
+    60%{
+        box-shadow: 0 0 60px #ac2562, 0 0 70px #1876a6, 0 0 80px #2f186f;
+    }
+}
+
+
+@media screen and (max-width: 990px){
+    body main .card .btn-primary {
+        
+        margin: 0 5%;
+    }
+}
+@media screen and (max-width: 767px){
+
+    body .cont-img .img-Aire {
+        border-radius: 0 0 0 40px;
+        width: 120px;
+        height: 140px;
     }
 
-    .listaServicios ul {
-        text-align: center;
-        list-style: none;
-    }
-}
-/* ------------------aqui El MAIN ----------------------*/
-.d-block {
-    margin: auto;
-}
-
-.card {
-    background: transparent;
-    margin: 10px 0px;
-}
-
-.btn-primary {
-    margin: 0 35%;
-}
-.cajaBtn {
-    margin: 0 45%;
-}
-.btnContratar2 {
-    // utilizando mixin
-    @include dimenciones(fit-content, fit-content, rgb(115, 178, 230), 2em, white);
-    border: none;
-    margin: 0px 0 20px 0;
-
-    a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
+    body main .parrafoPresentacion p {
+        font-size: 1em;
     }
 
-    a:hover {
-        border-radius: 20px;
-        background: radial-gradient(rgb(255, 0, 0), rgb(255, 255, 255))
+    body main .card .btn-primary {
+        margin: 0 30%;
     }
 
-    &:hover a {
-        color: white;
+    body main .cajaBtn {
+        margin: 0 25%;
     }
 }
 
 @media screen and (max-width: 480px){
 
-    .img-Aire {
-        width: 120px;
-    }
+    // .img-Aire {
+    //     width: 120px;
+    // }
     
-    .parrafoPresentacion p {
-        font-size: 20px;
+    body main .parrafoPresentacion p {
+        font-size: 1em;
     }
 
-    .cajaBtn {
-        width: fit-content;
+    body main section article ul li {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    body main .card .btn-primary {
         margin: 0 30%;
     }
 
-    .btnContratar2 {
-        margin: 0px 0 10px 0;
-    }
-}
-
-@media screen and (max-width: 767px){
-
-    .img-Aire {
-        width: 120px;
-    }
-    .parrafoPresentacion p {
-        font-size: 20px;
-    }
-
     .cajaBtn {
         width: fit-content;
-        margin: 0 35%;
+        margin: 0 25%;
+
+        .btnContratar2 {
+            margin: 0px 0 10px 0;
+        }
     }
 }

@@ -1,7 +1,6 @@
 footer {
-    
     padding: 1em 0 1em 0;
-    background: rgb(115, 178, 230);
+    background: rgb(17, 15, 121);
     grid-area: footer;
 
     .enlacesDelFooter {
@@ -10,8 +9,26 @@ footer {
 
         .footerNav {
             width: 240px;
-            height: 100px;
-            // margin-right: 10px;  
+            height: 50px;
+            margin: auto;
+
+            .caja__icons {
+                display: flex;
+
+                .btn__icon {
+                    width: 100px;
+                    height: 50px;
+                    display: flex;
+
+                    a i {
+                        font-size: 2.5em;
+                    }
+
+                    a i:hover {
+                        box-shadow: 0 0 60px #beaef0;
+                    }
+                }
+            }
 
             h2 {
                 margin-bottom: 12px;
@@ -30,6 +47,10 @@ footer {
                 animation: float 5s ease-in-out infinite;
             }
 
+            .transferencia {
+                background: #ffffff;
+            }
+
             .icon-insta {
                 animation-delay: 1s;
             }
@@ -39,43 +60,42 @@ footer {
             }
         }
     }
-}
-
-@media screen and (max-width: 480px){
-    footer .enlacesDelFooter {
-        display: block;
-        justify-content: space-around;
-    }
-    
-    .footerNav {
-        margin: auto;
-
-        .img0 {
-            width: 160px;
-            height: 44px;
-            margin-left: 5px;
-    
-        }
-
-        .img1 {
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-        } 
+    .copy {
+        text-align: center;
+        color: white;
     }
 }
 
 @media screen and (max-width: 767px){
-    
-        .img0{
-            width: 160px;
-            height: 44px;
-            margin-left: 5px;
-        }
+    footer{
+        width: 100%;
 
-        .img1 {
-            width: 25px;
-            height: 40px;
-            border-radius: 50%;
+        .enlacesDelFooter{
+            display: flex;
+            justify-content:space-around;
+
+            .footerNav {
+                width: 240px;
+                height: 50px;
+                margin: auto;
+            }
         }
+    }
+}
+
+@media screen and (max-width: 480px){
+    footer{
+        width: 100%;
+
+        .enlacesDelFooter {
+            display: flex;
+            justify-content:space-around;
+
+            .footerNav {
+                width: 240px;
+                height: 50px;
+                margin: auto;
+            }
+        }
+    }
 }

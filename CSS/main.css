@@ -1,3 +1,10 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
+
 /* ejemplos de transiciones >>>>>>>>>>>>>>>>>>>>*/
 .transicion {
   width: 80%;
@@ -38,7 +45,7 @@
   right: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(270deg, transparent, #73b2e6); }
+  background: linear-gradient(270deg, transparent, #007eff); }
 
 /* ---------------------------- */
 .span2 {
@@ -46,7 +53,7 @@
   right: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(270deg, transparent, #73b2e6); }
+  background: linear-gradient(270deg, transparent, #007eff); }
 
 /* ---------------------------- */
 .span3 {
@@ -54,7 +61,7 @@
   right: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(270deg, transparent, #73b2e6); }
+  background: linear-gradient(270deg, transparent, #007eff); }
 
 /* ---------------------------- */
 .span4 {
@@ -62,7 +69,7 @@
   right: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(270deg, transparent, #73b2e6); }
+  background: linear-gradient(270deg, transparent, #007eff); }
 
 /* ejemplos de transiciones <<<<<<<<<<<<<<<<<*/
 @keyframes float {
@@ -78,11 +85,16 @@ header {
   width: 100%; }
   header nav {
     padding: 10px;
-    margin: 30px auto;
+    margin: 0 auto;
     border-radius: 20px 0 20px 0;
     display: flex;
     justify-content: space-around;
-    background: #73b2e6; }
+    background: #110f79; }
+    header nav .bg-light {
+      background-color: #3b3b77; }
+    header nav .navbar-light .navbar-toggler-icon {
+      color: white;
+      background-image: url(../../img/menubuttonofthreelinesoutline_112563.png); }
     header nav a {
       text-decoration: none; }
     header nav .caja-logos p {
@@ -90,9 +102,12 @@ header {
       color: black;
       text-align: center; }
     header nav .logoPrincipal {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%; }
+      width: 400px;
+      height: 150px; }
+    header nav .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 0;
+      align-items: center; }
     header nav .titulo {
       width: 300px;
       height: 52px; }
@@ -122,6 +137,14 @@ header {
           border-left: 1px solid red;
           border-bottom: 1px solid red; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #f8f9fa; }
+
+@media screen and (max-width: 470px) {
+  header nav .logoPrincipal {
+    width: 270px;
+    height: 150px; } }
+
 @media screen and (max-width: 480px) {
   header nav .lista-nav {
     display: block; } }
@@ -130,96 +153,114 @@ header {
   header nav .lista-nav {
     display: block; } }
 
-main {
-  /* height:min-content; */
-  background-image: url("../img/familia-Disfrutando.webp");
-  background-size: cover;
-  grid-area: main;
-  margin-bottom: 1em;
-  /* Titulo del Main h1 >>>>>>>>>>>>>*/ }
-  main .titulo-Principal {
-    width: 70%;
-    height: fit-content;
+body {
+  background: #bfbbbb; }
+  body .cont-img {
+    display: flex;
+    justify-content: flex-end;
     position: relative; }
-    main .titulo-Principal h1 {
-      margin: 40px 0 0 20px;
-      position: absolute; }
-  main section article ul li {
-    font-size: 2em;
-    text-align: center; }
-  main section article .tituloDePagina {
-    text-align: center;
-    font-size: 2em; }
+    body .cont-img .img-Aire {
+      border-radius: 0 0 0 40px;
+      width: 250px;
+      height: 200px; }
+  body main {
+    background-size: cover;
+    grid-area: main;
+    margin-bottom: 1em;
+    /* Titulo del Main h1 >>>>>>>>>>>>>*/ }
+    body main .parrafoPresentacion {
+      padding: 10px;
+      background: rgba(216, 226, 231, 0.5); }
+      body main .parrafoPresentacion p {
+        font-size: 2em; }
+      body main .parrafoPresentacion .listaServicios ul {
+        text-align: center;
+        list-style: none; }
+    body main .carousel {
+      margin: 20px 20%; }
+      body main .carousel .d-block {
+        height: 25em;
+        margin: auto; }
+    body main .titulo-Principal {
+      width: 70%;
+      height: fit-content;
+      position: relative; }
+      body main .titulo-Principal h1 {
+        margin: 40px 0 0 20px;
+        position: absolute; }
+    body main section article ul li {
+      font-size: 2em;
+      text-align: center; }
+    body main section article .tituloDePagina {
+      text-align: center;
+      font-size: 2em; }
+    body main .card {
+      background: transparent;
+      margin: 10px 0px; }
+      body main .card h5 {
+        text-align: center; }
+      body main .card p {
+        text-align: center; }
+      body main .card .btn-primary {
+        width: 150px;
+        background: #110f79;
+        margin: 0 30%; }
+    body main .cajaBtn {
+      margin: 0 40%; }
+      body main .cajaBtn .btnContratar2 {
+        width: fit-content;
+        height: fit-content;
+        background: #73b2e6;
+        font-size: 2em;
+        color: white;
+        background: black;
+        border: 5px solid;
+        border-image: linear-gradient(#2f36ff, #dd2476, #1c64ff) 1;
+        animation: rotate 1s ease-in infinite; }
+        body main .cajaBtn .btnContratar2 a {
+          color: #6d1553;
+          text-decoration: none;
+          font-family: 'Patua One', cursive; }
+        body main .cajaBtn .btnContratar2 a:hover {
+          border-radius: 20px; }
+        body main .cajaBtn .btnContratar2:hover a {
+          color: white; }
 
-.cont-img {
-  display: flex;
-  justify-content: flex-end;
-  position: relative; }
+@keyframes rotate {
+  50% {
+    border-image: linear-gradient(#1c64ff, #dd2476, #2f36ff) 1; }
+  60% {
+    box-shadow: 0 0 60px #ac2562, 0 0 70px #1876a6, 0 0 80px #2f186f; } }
 
-.img-Aire {
-  border-radius: 0 0 0 40px;
-  width: 250px;
-  height: 200px; }
-
-.parrafoPresentacion {
-  padding: 10px;
-  background: rgba(216, 226, 231, 0.5); }
-  .parrafoPresentacion p {
-    font-size: 2em; }
-  .parrafoPresentacion .listaServicios ul {
-    text-align: center;
-    list-style: none; }
-
-/* ------------------aqui El MAIN ----------------------*/
-.d-block {
-  margin: auto; }
-
-.card {
-  background: transparent;
-  margin: 10px 0px; }
-
-.btn-primary {
-  margin: 0 35%; }
-
-.cajaBtn {
-  margin: 0 45%; }
-
-.btnContratar2 {
-  width: fit-content;
-  height: fit-content;
-  background: #73b2e6;
-  font-size: 2em;
-  color: white;
-  border: none;
-  margin: 0px 0 20px 0; }
-  .btnContratar2 a {
-    color: black;
-    text-decoration: none; }
-  .btnContratar2 a:hover {
-    border-radius: 20px;
-    background: radial-gradient(red, white); }
-  .btnContratar2:hover a {
-    color: white; }
-
-@media screen and (max-width: 480px) {
-  .img-Aire {
-    width: 120px; }
-  .parrafoPresentacion p {
-    font-size: 20px; }
-  .cajaBtn {
-    width: fit-content;
-    margin: 0 30%; }
-  .btnContratar2 {
-    margin: 0px 0 10px 0; } }
+@media screen and (max-width: 990px) {
+  body main .card .btn-primary {
+    margin: 0 5%; } }
 
 @media screen and (max-width: 767px) {
-  .img-Aire {
-    width: 120px; }
-  .parrafoPresentacion p {
-    font-size: 20px; }
+  body .cont-img .img-Aire {
+    border-radius: 0 0 0 40px;
+    width: 120px;
+    height: 140px; }
+  body main .parrafoPresentacion p {
+    font-size: 1em; }
+  body main .card .btn-primary {
+    margin: 0 30%; }
+  body main .cajaBtn {
+    margin: 0 25%; } }
+
+@media screen and (max-width: 480px) {
+  body main .parrafoPresentacion p {
+    font-size: 1em; }
+  body main section article ul li {
+    font-size: 1em;
+    text-align: center; }
+  body main .card .btn-primary {
+    margin: 0 30%; }
   .cajaBtn {
     width: fit-content;
-    margin: 0 35%; } }
+    margin: 0 25%; }
+    .cajaBtn .btnContratar2 {
+      margin: 0px 0 10px 0; } }
 
 .tituloAiresAcon {
   font-size: 50px;
@@ -281,14 +322,25 @@ main {
 /* formulario para la pagina de contactos<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 footer {
   padding: 1em 0 1em 0;
-  background: #73b2e6;
+  background: #110f79;
   grid-area: footer; }
   footer .enlacesDelFooter {
     display: flex;
     justify-content: space-around; }
     footer .enlacesDelFooter .footerNav {
       width: 240px;
-      height: 100px; }
+      height: 50px;
+      margin: auto; }
+      footer .enlacesDelFooter .footerNav .caja__icons {
+        display: flex; }
+        footer .enlacesDelFooter .footerNav .caja__icons .btn__icon {
+          width: 100px;
+          height: 50px;
+          display: flex; }
+          footer .enlacesDelFooter .footerNav .caja__icons .btn__icon a i {
+            font-size: 2.5em; }
+          footer .enlacesDelFooter .footerNav .caja__icons .btn__icon a i:hover {
+            box-shadow: 0 0 60px #beaef0; }
       footer .enlacesDelFooter .footerNav h2 {
         margin-bottom: 12px;
         text-align: center; }
@@ -300,32 +352,34 @@ footer {
         height: 50px;
         border-radius: 50%;
         animation: float 5s ease-in-out infinite; }
+      footer .enlacesDelFooter .footerNav .transferencia {
+        background: #ffffff; }
       footer .enlacesDelFooter .footerNav .icon-insta {
         animation-delay: 1s; }
       footer .enlacesDelFooter .footerNav .icon-wsp {
         animation-delay: 2s; }
-
-@media screen and (max-width: 480px) {
-  footer .enlacesDelFooter {
-    display: block;
-    justify-content: space-around; }
-  .footerNav {
-    margin: auto; }
-    .footerNav .img0 {
-      width: 160px;
-      height: 44px;
-      margin-left: 5px; }
-    .footerNav .img1 {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%; } }
+  footer .copy {
+    text-align: center;
+    color: white; }
 
 @media screen and (max-width: 767px) {
-  .img0 {
-    width: 160px;
-    height: 44px;
-    margin-left: 5px; }
-  .img1 {
-    width: 25px;
-    height: 40px;
-    border-radius: 50%; } }
+  footer {
+    width: 100%; }
+    footer .enlacesDelFooter {
+      display: flex;
+      justify-content: space-around; }
+      footer .enlacesDelFooter .footerNav {
+        width: 240px;
+        height: 50px;
+        margin: auto; } }
+
+@media screen and (max-width: 480px) {
+  footer {
+    width: 100%; }
+    footer .enlacesDelFooter {
+      display: flex;
+      justify-content: space-around; }
+      footer .enlacesDelFooter .footerNav {
+        width: 240px;
+        height: 50px;
+        margin: auto; } }
