@@ -163,9 +163,6 @@ body {
       border-radius: 0 0 0 40px;
       width: 250px;
       height: 200px; }
-  body .formParaContacto .titulo__form {
-    font-size: 2em;
-    text-align: center; }
   body main {
     background-size: cover;
     grid-area: main;
@@ -179,11 +176,9 @@ body {
       body main .parrafoPresentacion .listaServicios ul {
         text-align: center;
         list-style: none; }
-    body main .carousel {
-      margin: 20px 20%; }
-      body main .carousel .d-block {
-        height: 25em;
-        margin: auto; }
+    body main .formParaContacto .titulo__form {
+      font-size: 2em;
+      text-align: center; }
     body main .titulo-Principal {
       width: 70%;
       height: fit-content;
@@ -197,6 +192,11 @@ body {
     body main section article .tituloDePagina {
       text-align: center;
       font-size: 2em; }
+    body main .carousel {
+      width: 80%;
+      margin: 5px auto; }
+      body main .carousel .d-block {
+        height: 25em; }
     body main .card {
       background: transparent;
       margin: 10px 0px; }
@@ -237,7 +237,7 @@ body {
 
 @media screen and (max-width: 990px) {
   body main .card .btn-primary {
-    margin: 0 5%; } }
+    margin: 0 10%; } }
 
 @media screen and (max-width: 767px) {
   body .cont-img .img-Aire {
@@ -246,6 +246,11 @@ body {
     height: 140px; }
   body main .parrafoPresentacion p {
     font-size: 1em; }
+  body main .carousel {
+    width: 100%;
+    margin: 5px auto; }
+  body main .card .btn-primary {
+    margin: 0 30%; }
   body main .card .btn-primary {
     margin: 0 30%; }
   body main .cajaBtn {
@@ -253,16 +258,19 @@ body {
 
 @media screen and (max-width: 480px) {
   body main .parrafoPresentacion p {
-    font-size: 1em; }
+    font-size: 1.5em; }
   body main section article ul li {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center; }
+  body main .carousel {
+    width: 100%;
+    margin: 5px auto; }
   body main .card .btn-primary {
     margin: 0 30%; }
-  .cajaBtn {
+  body main .cajaBtn {
     width: fit-content;
     margin: 0 25%; }
-    .cajaBtn .btnContratar2 {
+    body main .cajaBtn .btnContratar2 {
       margin: 0px 0 10px 0; } }
 
 .tituloAiresAcon {
