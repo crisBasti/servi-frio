@@ -217,15 +217,13 @@ body {
         font-size: 2em;
         color: white;
         background: black;
-        border: 5px solid;
+        border: 10px solid;
         border-image: linear-gradient(#2f36ff, #dd2476, #1c64ff) 1;
         animation: rotate 1s ease-in infinite; }
         body main .cajaBtn .btnContratar2 a {
           color: #6d1553;
           text-decoration: none;
           font-family: 'Patua One', cursive; }
-        body main .cajaBtn .btnContratar2 a:hover {
-          border-radius: 20px; }
         body main .cajaBtn .btnContratar2:hover a {
           color: white; }
 
@@ -349,7 +347,7 @@ footer {
           height: 50px;
           display: flex; }
           footer .enlacesDelFooter .footerNav .caja__icons .btn__icon a i {
-            font-size: 2.5em; }
+            font-size: 1.5em; }
           footer .enlacesDelFooter .footerNav .caja__icons .btn__icon a i:hover {
             box-shadow: 0 0 60px #beaef0; }
       footer .enlacesDelFooter .footerNav h2 {

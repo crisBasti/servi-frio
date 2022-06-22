@@ -97,7 +97,7 @@ body {
                 @include dimenciones(fit-content, fit-content, rgb(115, 178, 230), 2em, white);
 
                 background: black;
-                border: 5px solid;
+                border: 10px solid;
                 border-image: linear-gradient(#2f36ff,#dd2476,#1c64ff) 1;
                 animation: rotate 1s ease-in infinite;
             
@@ -105,10 +105,6 @@ body {
                     color: rgb(109, 21, 83);
                     text-decoration: none;
                     font-family: 'Patua One', cursive;
-                }
-            
-                a:hover {
-                    border-radius: 20px;
                 }
             
                 &:hover a {
@@ -142,7 +138,6 @@ body {
             }
         } 
     }
-    
 }
 
 @media screen and (max-width: 767px) {

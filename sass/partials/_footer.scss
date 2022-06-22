@@ -20,12 +20,14 @@ footer {
                     height: 50px;
                     display: flex;
 
-                    a i {
-                        font-size: 2.5em;
-                    }
+                    a {
+                        i {
+                            font-size: 1.5em;
+                        }
 
-                    a i:hover {
-                        box-shadow: 0 0 60px #beaef0;
+                        i:hover {
+                            box-shadow: 0 0 60px #beaef0;
+                        }
                     }
                 }
             }
